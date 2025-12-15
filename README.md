@@ -5,6 +5,9 @@
 ## Live Demo
 Visit the live application: [Joe Johnson Portfolio](https://joe-johnson-23.github.io/joe-johnson-portfolio/)
 
+## Hidden Keyboard Controls for Home Page
+- `M` - Increases the speed of the floating bubbles
+- `N` - Decreases the speed of the floating bubbles
 
 # Infinite Spiral
 ## A double pendulum visualization project is in here at it is FUN!!

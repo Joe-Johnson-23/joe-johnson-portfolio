@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-function FloatingBubble({ children, href, to, color = '#4dabf7', size = 120, initialX, initialY, onPositionChange, id }) {
+function FloatingBubble({ children, href, to, color = '#4dabf7', size = 120, initialX, initialY, onPositionChange, id, speedMultiplier = 1 }) {
   const [position, setPosition] = useState({ 
     x: initialX ?? Math.random() * (window.innerWidth - size), 
     y: initialY ?? Math.random() * (window.innerHeight - size) 
@@ -12,6 +12,7 @@ function FloatingBubble({ children, href, to, color = '#4dabf7', size = 120, ini
     y: (Math.random() - 0.5) * 2
   });
   const positionRef = useRef(position);
+  const speedRef = useRef(speedMultiplier);
 
   useEffect(() => {
     positionRef.current = position;
@@ -20,14 +21,20 @@ function FloatingBubble({ children, href, to, color = '#4dabf7', size = 120, ini
     }
   }, [position, onPositionChange, id, size, color]);
 
+  // Update speed ref when prop changes
+  useEffect(() => {
+    speedRef.current = speedMultiplier;
+  }, [speedMultiplier]);
+
   useEffect(() => {
     let animationId;
     
     const animate = () => {
       if (!isHovered) {
         const vel = velocityRef.current;
-        let newX = positionRef.current.x + vel.x;
-        let newY = positionRef.current.y + vel.y;
+        const speed = speedRef.current;
+        let newX = positionRef.current.x + vel.x * speed;
+        let newY = positionRef.current.y + vel.y * speed;
 
         // Bounce off walls
         if (newX <= 0 || newX >= window.innerWidth - size) {
@@ -43,7 +50,7 @@ function FloatingBubble({ children, href, to, color = '#4dabf7', size = 120, ini
         vel.x += (Math.random() - 0.5) * 0.1;
         vel.y += (Math.random() - 0.5) * 0.1;
 
-        // Clamp velocity
+        // Clamp velocity (base velocity, speed multiplier applied on movement)
         const maxSpeed = 2;
         vel.x = Math.max(-maxSpeed, Math.min(maxSpeed, vel.x));
         vel.y = Math.max(-maxSpeed, Math.min(maxSpeed, vel.y));

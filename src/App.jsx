@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import InfiniteSpiral from './components/InfiniteSpiral';
 import StarryBackground from './components/StarryBackground';
@@ -7,6 +7,22 @@ import InteractiveTitle from './components/InteractiveTitle';
 
 function Home() {
   const [bubblePositions, setBubblePositions] = useState({});
+  const [bubbleSpeed, setBubbleSpeed] = useState(1);
+
+  // Keyboard controls for bubble speed: 'm' = faster, 'n' = slower
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key.toLowerCase() === 'm') {
+        setBubbleSpeed(prev => Math.min(prev + 0.5, 5)); // Max speed 5x
+      }
+      if (event.key.toLowerCase() === 'n') {
+        setBubbleSpeed(prev => Math.max(prev - 0.5, 0.25)); // Min speed 0.25x
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, []);
 
   const handleBubblePositionChange = useCallback((id, positionData) => {
     setBubblePositions(prev => ({
@@ -35,6 +51,7 @@ function Home() {
         initialX={window.innerWidth * 0.25}
         initialY={window.innerHeight * 0.4}
         onPositionChange={handleBubblePositionChange}
+        speedMultiplier={bubbleSpeed}
       >
         Coin Shop
       </FloatingBubble>
@@ -47,6 +64,7 @@ function Home() {
         initialX={window.innerWidth * 0.6}
         initialY={window.innerHeight * 0.5}
         onPositionChange={handleBubblePositionChange}
+        speedMultiplier={bubbleSpeed}
       >
         Infinite Spirals
       </FloatingBubble>
@@ -59,6 +77,7 @@ function Home() {
         initialX={window.innerWidth * 0.45}
         initialY={window.innerHeight * 0.65}
         onPositionChange={handleBubblePositionChange}
+        speedMultiplier={bubbleSpeed}
       >
         Health Dashboard
       </FloatingBubble>
