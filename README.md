@@ -1,9 +1,13 @@
-# Chaos Art
+# Joe Johnson
 
-A double pendulum visualization project.
+## Cool projects I have created!
 
 ## Live Demo
 Visit the live application: [Joe Johnson Portfolio](https://joe-johnson-23.github.io/joe-johnson-portfolio/)
+
+
+# Infinite Spiral
+## A double pendulum visualization project is in here at it is FUN!!
 
 ## Hidden Keyboard Controls for Infinite Spiral
 - `H` - Hides the pendulum's intermediate and terminal points
