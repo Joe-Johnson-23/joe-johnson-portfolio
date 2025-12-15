@@ -1,33 +1,55 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import React, { useState, useCallback } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import InfiniteSpiral from './components/InfiniteSpiral';
 import StarryBackground from './components/StarryBackground';
+import FloatingBubble from './components/FloatingBubble';
+import InteractiveTitle from './components/InteractiveTitle';
 
 function Home() {
+  const [bubblePositions, setBubblePositions] = useState({});
+
+  const handleBubblePositionChange = useCallback((id, positionData) => {
+    setBubblePositions(prev => ({
+      ...prev,
+      [id]: positionData
+    }));
+  }, []);
+
+  const bubblePositionsArray = Object.values(bubblePositions);
+
   return (
     <div className="app-container" style={{
       minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      // Remove or comment out the background color if you want the stars to show through
-      // background: '#1a1a1a',
+      width: '100vw',
+      position: 'relative',
+      overflow: 'hidden',
       color: 'white'
     }}>
-      <h1>Joe Johnson's Stuff</h1>
-      <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem' }}>
-        <a
-          href="https://dollarsandcents.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button style={{ fontSize: '1.5rem', padding: '1rem 2rem' }}>Coin Shop</button>
-        </a>
-        <Link to="/infinite-spiral">
-          <button style={{ fontSize: '1.5rem', padding: '1rem 2rem' }}>Infinite Spirals</button>
-        </Link>
-      </div>
+      <InteractiveTitle text="Joe Johnson" bubblePositions={bubblePositionsArray} />
+      
+      <FloatingBubble
+        id="coinshop"
+        href="https://dollarsandcents.io"
+        color="#ffd700"
+        size={140}
+        initialX={window.innerWidth * 0.25}
+        initialY={window.innerHeight * 0.4}
+        onPositionChange={handleBubblePositionChange}
+      >
+        Coin Shop
+      </FloatingBubble>
+      
+      <FloatingBubble
+        id="spirals"
+        to="/infinite-spiral"
+        color="#ff6b9d"
+        size={140}
+        initialX={window.innerWidth * 0.6}
+        initialY={window.innerHeight * 0.5}
+        onPositionChange={handleBubblePositionChange}
+      >
+        Infinite Spirals
+      </FloatingBubble>
     </div>
   );
 }
