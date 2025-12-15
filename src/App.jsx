@@ -15,7 +15,7 @@ function Home() {
       // background: '#1a1a1a',
       color: 'white'
     }}>
-      <h1>Welcome to Chaos Art</h1>
+      <h1>Joe Johnson's Stuff</h1>
       <div style={{ display: 'flex', gap: '2rem', marginTop: '2rem' }}>
         <a
           href="https://dollarsandcents.io"
