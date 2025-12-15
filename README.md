@@ -1,13 +1,7 @@
 # Joe Johnson
 
-
-
-## Live Demo
 Visit the live application: [Joe Johnson Portfolio](https://joe-johnson-23.github.io/joe-johnson-portfolio/)
 
-## Hidden Keyboard Controls for Home Page
-- `m` - Increases the speed of the floating bubbles
-- `n` - Decreases the speed of the floating bubbles
 
 ### About the Developer
 
