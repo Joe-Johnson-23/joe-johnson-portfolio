@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/chaosArt/',
+  base: '/joe-johnson-portfolio/',
   plugins: [react()],
   preview: {
     host: true,
