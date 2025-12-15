@@ -50,6 +50,18 @@ function Home() {
       >
         Infinite Spirals
       </FloatingBubble>
+      
+      <FloatingBubble
+        id="health-dashboard"
+        href="https://joe-johnson-23.github.io/health-insurance-dashboard/"
+        color="#00bcd4"
+        size={140}
+        initialX={window.innerWidth * 0.45}
+        initialY={window.innerHeight * 0.65}
+        onPositionChange={handleBubblePositionChange}
+      >
+        Health Dashboard
+      </FloatingBubble>
     </div>
   );
 }
