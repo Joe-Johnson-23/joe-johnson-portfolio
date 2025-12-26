@@ -47,7 +47,7 @@ function Home() {
         id="coinshop"
         href="https://dollarsandcents.io"
         color="#ffd700"
-        size={140}
+        size={210}
         initialX={window.innerWidth * 0.25}
         initialY={window.innerHeight * 0.4}
         onPositionChange={handleBubblePositionChange}
@@ -64,7 +64,7 @@ function Home() {
         initialX={window.innerWidth * 0.6}
         initialY={window.innerHeight * 0.5}
         onPositionChange={handleBubblePositionChange}
-        speedMultiplier={bubbleSpeed}
+        speedMultiplier={bubbleSpeed * 1.5}
       >
         Infinite Spirals
       </FloatingBubble>
@@ -77,7 +77,7 @@ function Home() {
         initialX={window.innerWidth * 0.45}
         initialY={window.innerHeight * 0.65}
         onPositionChange={handleBubblePositionChange}
-        speedMultiplier={bubbleSpeed}
+        speedMultiplier={bubbleSpeed * 1.5}
       >
         Health Dashboard
       </FloatingBubble>
