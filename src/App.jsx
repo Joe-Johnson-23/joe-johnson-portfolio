@@ -81,6 +81,19 @@ function Home() {
       >
         Health Dashboard
       </FloatingBubble>
+      
+      <FloatingBubble
+        id="gradecoin"
+        href="https://www.gradecoin.io"
+        color="#22c55e"
+        size={280}
+        initialX={window.innerWidth * 0.5}
+        initialY={window.innerHeight * 0.3}
+        onPositionChange={handleBubblePositionChange}
+        speedMultiplier={bubbleSpeed}
+      >
+        GradeCoin.io
+      </FloatingBubble>
     </div>
   );
 }

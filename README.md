@@ -19,3 +19,6 @@ I'm Joe Johnson, a developer passionate about creating interactive experiences t
  (https://dollarsandcents.io)
  A numismatic website for the brick and mortar coin shop located in Rochester, IL.
 
+## GradeCoin.io
+ An AI-powered coin grader for Morgan dollars: [GradeCoin.io](https://www.gradecoin.io)
+
