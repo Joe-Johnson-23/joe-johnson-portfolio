@@ -12,6 +12,8 @@ Personal portfolio website showcasing my projects and skills.
 - **Dollars and Cents** - Numismatic e-commerce platform
 - **Infinite Spirals** - Double pendulum physics visualization
 - **Health Insurance Dashboard** - Data visualization exploring education and health coverage
+- **Eigenfaces** - Facial recognition using Principal Component Analysis
+- **Chess Capstone** - Full-featured chess game built in Java
 
 ## About
 
