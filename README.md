@@ -1,24 +1,24 @@
-# Joe Johnson
+# Joe Johnson - Portfolio
 
-Visit the live application: [Joe Johnson Portfolio](https://joe-johnson-23.github.io/joe-johnson-portfolio/)
+Personal portfolio website showcasing my projects and skills.
 
+## 🔗 Live Site
 
-### About the Developer
+**[View Portfolio →](https://joe-johnson-23.github.io/joe-johnson-portfolio/)**
 
-I'm Joe Johnson, a developer passionate about creating interactive experiences that blend mathematics, physics, and art. This project is part of my portfolio showcasing the intersection of technical implementation and creative visualization.
+## Featured Projects
 
+- **GradeCoin.io** - AI-powered coin grader for Morgan dollars
+- **Dollars and Cents** - Numismatic e-commerce platform
+- **Infinite Spirals** - Double pendulum physics visualization
+- **Health Insurance Dashboard** - Data visualization exploring education and health coverage
 
+## About
 
-## Infinite Spiral
- A double pendulum visualization project [Interactive]
+I'm Joe Johnson, a Data Analyst and Software Developer pursuing a Master's degree in Data Analytics. My journey has taken me from buying and selling rare coins to designing websites and completing independent technology projects.
 
-## Health Dashboard
- An inside look at how education affects health insurance
+## Contact
 
-## Dollarsandcents.io
- (https://dollarsandcents.io)
- A numismatic website for the brick and mortar coin shop located in Rochester, IL.
-
-## GradeCoin.io
- An AI-powered coin grader for Morgan dollars: [GradeCoin.io](https://www.gradecoin.io)
+- Email: joepatrickjohnson@outlook.com
+- GitHub: [Joe-Johnson-23](https://github.com/Joe-Johnson-23)
 
