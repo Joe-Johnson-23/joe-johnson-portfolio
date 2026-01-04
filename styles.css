@@ -3,11 +3,11 @@
    ========================================= */
 :root {
     /* Color Palette */
-    --primary-color: #ef4444;
-    --primary-light: #f87171;
-    --primary-dark: #dc2626;
-    --secondary-color: #f97316;
-    --accent-color: #fb923c;
+    --primary-color: #dc2626;
+    --primary-light: #ef4444;
+    --primary-dark: #7f1d1d;
+    --secondary-color: #991b1b;
+    --accent-color: #facc15;
     --success-color: #10b981;
 
     /* Backgrounds - Dark Mode (default) */
@@ -22,8 +22,8 @@
     --text-muted: #64748b;
 
     /* Effects */
-    --glow-primary: rgba(239, 68, 68, 0.4);
-    --glow-secondary: rgba(249, 115, 22, 0.3);
+    --glow-primary: rgba(220, 38, 38, 0.4);
+    --glow-secondary: rgba(153, 27, 27, 0.3);
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -393,8 +393,8 @@ img {
 }
 
 [data-theme="light"] .tech-tag {
-    background: rgba(239, 68, 68, 0.08);
-    border-color: rgba(239, 68, 68, 0.15);
+    background: rgba(220, 38, 38, 0.08);
+    border-color: rgba(220, 38, 38, 0.15);
 }
 
 [data-theme="light"] .carousel-dot {
@@ -827,8 +827,8 @@ img {
 .tech-tag {
     padding: 0.35rem 0.9rem;
     border-radius: var(--radius-full);
-    background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.2);
+    background: rgba(220, 38, 38, 0.1);
+    border: 1px solid rgba(220, 38, 38, 0.2);
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--primary-light);
@@ -836,7 +836,7 @@ img {
 }
 
 .tech-tag:hover {
-    background: rgba(239, 68, 68, 0.2);
+    background: rgba(220, 38, 38, 0.2);
     transform: translateY(-2px);
 }
 

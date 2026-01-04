@@ -41,7 +41,7 @@ class BackgroundEffect {
                 size: size,
                 baseSize: size,
                 opacity: Math.random() * 0.5 + 0.2,
-                hue: Math.random() * 40 + 0
+                hue: Math.random() * 60 + 0
             });
         }
     }
