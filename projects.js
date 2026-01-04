@@ -42,6 +42,28 @@ const projects = [
         techStack: ["React", "Chart.js", "Data Visualization", "Framer Motion"],
         demoLink: "https://joe-johnson-23.github.io/health-insurance-dashboard/",
         githubLink: "https://github.com/Joe-Johnson-23/health-insurance-dashboard"
+    },
+    {
+        title: "Eigenfaces",
+        category: "Machine Learning",
+        description: "Facial recognition using Principal Component Analysis to identify and reconstruct faces.",
+        detailsTitle: "Facial Recognition with PCA",
+        details: "Implemented the classic Eigenfaces algorithm for facial recognition using Principal Component Analysis (PCA). The project demonstrates how high-dimensional face images can be projected onto a lower-dimensional 'face space' defined by eigenvectors, enabling efficient face identification and reconstruction.",
+        image: "images/eigenfaces.png",
+        techStack: ["Python", "NumPy", "Machine Learning", "Computer Vision"],
+        demoLink: "https://colab.research.google.com/github/Joe-Johnson-23/Eigenfaces/blob/main/eigenfaces.ipynb",
+        githubLink: "https://github.com/Joe-Johnson-23/Eigenfaces"
+    },
+    {
+        title: "Chess Capstone",
+        category: "Game Development",
+        description: "A full-featured chess game built in Java with complete game logic and move validation.",
+        detailsTitle: "Java Chess Engine",
+        details: "Developed a comprehensive chess game in Java featuring complete game logic, legal move validation, check/checkmate detection, and an interactive game interface. The project demonstrates object-oriented programming principles with well-structured classes for pieces, board state, and game rules.",
+        image: "images/chess.png",
+        techStack: ["Java", "OOP", "Game Logic", "Maven"],
+        demoLink: null,
+        githubLink: "https://github.com/Joe-Johnson-23/chessCapstone"
     }
 ];
 
