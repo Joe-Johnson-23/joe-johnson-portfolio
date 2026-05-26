@@ -55,7 +55,7 @@ const projects = [
         demoLabel: "Hugging Face",
         notebookLink: "https://colab.research.google.com/github/Joe-Johnson-23/LoraArt/blob/main/LoraArt.ipynb",
         notebookLabel: "Open in Colab",
-        githubLink: "https://github.com/Joe-Johnson-23/LoraArt"
+        githubLink: null
     },
     {
         title: "Eigenfaces",
