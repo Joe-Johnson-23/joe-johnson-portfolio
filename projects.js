@@ -1,16 +1,5 @@
 const projects = [
     {
-        title: "GradeCoin.io",
-        category: "AI Application",
-        description: "AI-powered coin grader for Morgan dollars using machine learning.",
-        detailsTitle: "AI Coin Grading Platform",
-        details: "Developed an AI-powered coin grading application that uses machine learning to analyze and grade Morgan dollars. The platform provides accurate, consistent grading assessments to help collectors and dealers evaluate their coins with confidence.",
-        image: "images/gradecoin.png",
-        techStack: ["AI", "Machine Learning", "React", "Python"],
-        demoLink: "https://www.gradecoin.io",
-        githubLink: null
-    },
-    {
         title: "Dollars and Cents",
         category: "E-Commerce",
         description: "Numismatic website for the brick and mortar coin shop in Rochester, IL.",
@@ -19,6 +8,31 @@ const projects = [
         image: "images/dollarsandcents.png",
         techStack: ["Web Development", "E-Commerce", "JavaScript"],
         demoLink: "https://www.dollarsandcents.io",
+        githubLink: null
+    },
+    {
+        title: "Lora Art",
+        category: "Deep Learning",
+        description: "Artist style transfer with LoRA fine-tuning on Stable Diffusion—Monet and Van Gogh, evaluated with LPIPS.",
+        detailsTitle: "LoRA Artist Style Transfer",
+        details: "Built a reproducible pipeline to fine-tune Stable Diffusion 1.5 with LoRA adapters for Claude Monet and Vincent van Gogh. Compared dataset scale and training checkpoints, swept img2img strength, and quantified the style-vs-content tradeoff with LPIPS. The Hugging Face Space lets you upload an image and restyle it interactively; the notebook documents training, inference, and evaluation.",
+        image: "images/loraart.png",
+        techStack: ["Python", "PyTorch", "LoRA", "Stable Diffusion", "LPIPS", "Gradio"],
+        demoLink: "https://huggingface.co/spaces/jjohn430/Lora_Art",
+        demoLabel: "Hugging Face",
+        notebookLink: "https://colab.research.google.com/github/Joe-Johnson-23/LoraArt/blob/main/LoraArt.ipynb",
+        notebookLabel: "Open in Colab",
+        githubLink: null
+    },
+    {
+        title: "GradeCoin.io",
+        category: "AI Application",
+        description: "AI-powered coin grader for Morgan dollars using machine learning.",
+        detailsTitle: "AI Coin Grading Platform",
+        details: "Developed an AI-powered coin grading application that uses machine learning to analyze and grade Morgan dollars. The platform provides accurate, consistent grading assessments to help collectors and dealers evaluate their coins with confidence.",
+        image: "images/gradecoin.png",
+        techStack: ["AI", "Machine Learning", "React", "Python"],
+        demoLink: "https://www.gradecoin.io",
         githubLink: null
     },
     {
@@ -42,20 +56,6 @@ const projects = [
         techStack: ["React", "Chart.js", "Data Visualization", "Framer Motion"],
         demoLink: "https://joe-johnson-23.github.io/health-insurance-dashboard/",
         githubLink: "https://github.com/Joe-Johnson-23/health-insurance-dashboard"
-    },
-    {
-        title: "Lora Art",
-        category: "Deep Learning",
-        description: "Artist style transfer with LoRA fine-tuning on Stable Diffusion—Monet and Van Gogh, evaluated with LPIPS.",
-        detailsTitle: "LoRA Artist Style Transfer",
-        details: "Built a reproducible pipeline to fine-tune Stable Diffusion 1.5 with LoRA adapters for Claude Monet and Vincent van Gogh. Compared dataset scale and training checkpoints, swept img2img strength, and quantified the style-vs-content tradeoff with LPIPS. The Hugging Face Space lets you upload an image and restyle it interactively; the notebook documents training, inference, and evaluation.",
-        image: "images/loraart.png",
-        techStack: ["Python", "PyTorch", "LoRA", "Stable Diffusion", "LPIPS", "Gradio"],
-        demoLink: "https://huggingface.co/spaces/jjohn430/Lora_Art",
-        demoLabel: "Hugging Face",
-        notebookLink: "https://colab.research.google.com/github/Joe-Johnson-23/LoraArt/blob/main/LoraArt.ipynb",
-        notebookLabel: "Open in Colab",
-        githubLink: null
     },
     {
         title: "Eigenfaces",
