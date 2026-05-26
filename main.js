@@ -378,12 +378,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedElement = document.querySelector('.typed-text');
     if (typedElement) {
         new TypeWriter(typedElement, [
-            'Creative Technologist',
             'Full-Stack Engineer',
             'Numismatist',
-            'Artist',
             'Software Developer',
-            'Algorithm Enthusiast'
+            'Artist',
+            'Data Scientist'
         ], 2000);
     }
 
