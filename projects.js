@@ -44,6 +44,20 @@ const projects = [
         githubLink: "https://github.com/Joe-Johnson-23/health-insurance-dashboard"
     },
     {
+        title: "Lora Art",
+        category: "Deep Learning",
+        description: "Artist style transfer with LoRA fine-tuning on Stable Diffusion—Monet and Van Gogh, evaluated with LPIPS.",
+        detailsTitle: "LoRA Artist Style Transfer",
+        details: "Built a reproducible pipeline to fine-tune Stable Diffusion 1.5 with LoRA adapters for Claude Monet and Vincent van Gogh. Compared dataset scale and training checkpoints, swept img2img strength, and quantified the style-vs-content tradeoff with LPIPS. The Hugging Face Space lets you upload an image and restyle it interactively; the notebook documents training, inference, and evaluation.",
+        image: "images/loraart.png",
+        techStack: ["Python", "PyTorch", "LoRA", "Stable Diffusion", "LPIPS", "Gradio"],
+        demoLink: "https://huggingface.co/spaces/jjohn430/Lora_Art",
+        demoLabel: "Hugging Face",
+        notebookLink: "https://colab.research.google.com/github/Joe-Johnson-23/LoraArt/blob/main/LoraArt.ipynb",
+        notebookLabel: "Open in Colab",
+        githubLink: "https://github.com/Joe-Johnson-23/LoraArt"
+    },
+    {
         title: "Eigenfaces",
         category: "Machine Learning",
         description: "Facial recognition using Principal Component Analysis to identify and reconstruct faces.",
