@@ -8,11 +8,12 @@ Personal portfolio website showcasing my projects and skills.
 
 ## Featured Projects
 
+- **InventoryCoins** - SaaS for coin shops: inventory, storefronts, Stripe Connect ([inventorycoins.com](https://inventorycoins.com))
+- **Live Auction Labels** - Chrome extension for Whatnot wins → auto-print 2×1 Rollo thermal labels on Mac ([site](https://liveauctionlabels.com) · [Chrome](https://chromewebstore.google.com/detail/live-auction-labels/ojbaehldokklkjbapieehlgakmeeffhb))
 - **Dollars and Cents** - Numismatic e-commerce platform
 - **Lora Art** - LoRA fine-tuning for Monet/Van Gogh style transfer on Stable Diffusion ([demo](https://huggingface.co/spaces/jjohn430/Lora_Art) · [code](https://github.com/Joe-Johnson-23/LoraArt))
 - **GradeCoin.io** - AI-powered coin grader for Morgan dollars
 - **Infinite Spirals** - Double pendulum physics visualization
-- **Health Insurance Dashboard** - Data visualization exploring education and health coverage
 - **Eigenfaces** - Facial recognition using Principal Component Analysis
 - **Chess Capstone** - Full-featured chess game built in Java
 

@@ -384,10 +384,6 @@ img {
     border-bottom-color: rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="light"] .hero-badge {
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
 [data-theme="light"] .nav-link:hover {
     background: rgba(0, 0, 0, 0.05);
 }
@@ -423,42 +419,6 @@ img {
 .hero-content {
     max-width: 900px;
     margin: 0 auto;
-}
-
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    padding: 0.5rem 1rem;
-    background: var(--surface-elevated);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-full);
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-xl);
-    animation: fadeInDown 0.8s ease forwards;
-}
-
-.badge-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--success-color);
-    border-radius: 50%;
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-
-    0%,
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 0.5;
-        transform: scale(1.2);
-    }
 }
 
 .hero-title {
@@ -618,58 +578,6 @@ img {
 .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: var(--primary-color);
-}
-
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-sm);
-    opacity: 0;
-    animation: fadeIn 0.8s ease 1s forwards;
-}
-
-.mouse {
-    width: 24px;
-    height: 40px;
-    border: 2px solid var(--text-muted);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    padding-top: 6px;
-}
-
-.wheel {
-    width: 4px;
-    height: 8px;
-    background: var(--text-muted);
-    border-radius: 2px;
-    animation: scroll-wheel 2s ease-in-out infinite;
-}
-
-@keyframes scroll-wheel {
-
-    0%,
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    50% {
-        opacity: 0.3;
-        transform: translateY(8px);
-    }
-}
-
-.scroll-indicator span {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 /* =========================================
@@ -1093,18 +1001,6 @@ img {
     from {
         opacity: 0;
         transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
     }
 
     to {

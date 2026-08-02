@@ -1,5 +1,31 @@
 const projects = [
     {
+        title: "InventoryCoins",
+        category: "Full Stack / Marketplace",
+        description: "SaaS for coin shops: inventory + cloud photos, custom storefronts, and live payments via Stripe Connect.",
+        detailsTitle: "Multi-Tenant Coin Dealer Platform",
+        details: "Multi-tenant coin-dealer platform — inventory, photos, thermal labels, and per-shop storefronts with Stripe Connect checkout.",
+        image: "images/inventorycoins.png",
+        techStack: ["Next.js", "React", "FastAPI", "PostgreSQL", "Stripe", "Docker", "DigitalOcean"],
+        demoLink: "https://inventorycoins.com",
+        demoLabel: "Website",
+        githubLink: null
+    },
+    {
+        title: "Live Auction Labels",
+        category: "Productivity / Chrome Extension",
+        description: "Chrome extension that captures Whatnot auction and giveaway wins and auto-prints 2×1 thermal labels on a Mac with a Rollo printer.",
+        detailsTitle: "Thermal Labels for Live Sellers",
+        details: "Seller-side tool for live shows: detects winners from Whatnot (network + UI), keeps a sale history in a side panel, and prints labels through a notarized local Mac print helper to a Rollo 2×1 thermal printer — no cloud print step.",
+        image: "images/liveauctionlabels.png",
+        techStack: ["Chrome Extension", "JavaScript", "Python", "Swift", "macOS", "Rollo"],
+        demoLink: "https://liveauctionlabels.com",
+        demoLabel: "Website",
+        notebookLink: "https://chromewebstore.google.com/detail/live-auction-labels/ojbaehldokklkjbapieehlgakmeeffhb",
+        notebookLabel: "Chrome Extension",
+        githubLink: null
+    },
+    {
         title: "Dollars and Cents",
         category: "E-Commerce",
         description: "Numismatic website for the brick and mortar coin shop in Rochester, IL.",
@@ -45,17 +71,6 @@ const projects = [
         techStack: ["JavaScript", "React", "Physics", "Canvas"],
         demoLink: "https://joe-johnson-23.github.io/infinite-spiral",
         githubLink: "https://github.com/Joe-Johnson-23/infinite-spiral"
-    },
-    {
-        title: "Health Insurance Dashboard",
-        category: "Data Visualization",
-        description: "Interactive dashboard exploring how education affects health insurance coverage.",
-        detailsTitle: "Health & Education Analytics Dashboard",
-        details: "Developed an interactive data visualization dashboard exploring the relationship between education levels and health insurance coverage in the United States (2010-2024). Features trend charts, stacked bar charts, radar comparisons, animated statistics, and data export capabilities. Built with React, Chart.js, and Framer Motion.",
-        image: "images/healthdashboard.png",
-        techStack: ["React", "Chart.js", "Data Visualization", "Framer Motion"],
-        demoLink: "https://joe-johnson-23.github.io/health-insurance-dashboard/",
-        githubLink: "https://github.com/Joe-Johnson-23/health-insurance-dashboard"
     },
     {
         title: "Eigenfaces",
