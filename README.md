@@ -8,7 +8,7 @@ Personal portfolio website showcasing my projects and skills.
 
 ## Featured Projects
 
-- **InventoryCoins** - SaaS for coin shops: inventory, storefronts, eBay, sales, memo, and checkout ([inventorycoins.com](https://inventorycoins.com))
+- **InventoryCoins** - SaaS for coin shops: inventory, storefronts, eBay, Greysheet pricing, and cert lookup ([inventorycoins.com](https://inventorycoins.com))
 - **Live Auction Labels** - Chrome extension for Whatnot wins → auto-print 2×1 Rollo thermal labels on Mac ([site](https://liveauctionlabels.com) · [Chrome](https://chromewebstore.google.com/detail/live-auction-labels/ojbaehldokklkjbapieehlgakmeeffhb))
 - **Dollars and Cents** - Numismatic e-commerce platform
 - **Lora Art** - LoRA fine-tuning for Monet/Van Gogh style transfer on Stable Diffusion ([demo](https://huggingface.co/spaces/jjohn430/Lora_Art) · [code](https://github.com/Joe-Johnson-23/LoraArt))
