@@ -2,9 +2,9 @@ const projects = [
     {
         title: "InventoryCoins",
         category: "Full Stack / Marketplace",
-        description: "SaaS for coin shops: inventory + cloud photos, custom storefronts, and live payments via Stripe Connect.",
+        description: "SaaS for coin shops: inventory system, custom storefronts, and eBay integration, with sales, memo, and online checkout.",
         detailsTitle: "Multi-Tenant Coin Dealer Platform",
-        details: "Multi-tenant coin-dealer platform — inventory, photos, thermal labels, and per-shop storefronts with Stripe Connect checkout.",
+        details: "Multi-tenant coin-dealer platform with an inventory system, custom storefronts, and eBay integration, plus sales, memo, and online checkout.",
         image: "images/inventorycoins.png",
         techStack: ["Next.js", "React", "FastAPI", "PostgreSQL", "Stripe", "Docker", "DigitalOcean"],
         demoLink: "https://inventorycoins.com",
